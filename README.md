@@ -57,6 +57,16 @@ wprowadzanie, wyświetlanie i edycja
     
 
 
-    
+## API
+    Producent
+    Metoda	Ścieżka	opis
+    GET	/	                Index
+    GET	/producent	        Lista producentów
+    GET	/producent/detal/{nazwa} 	Szczegóły producenta
+    GET	/producent/detal/{id}	Szczegóły producenta
+    GET	/producent/create	Formularz do tworzenia producenta
+    POST	/producent	        Zapis nowego producenta
+    		
+
 
  

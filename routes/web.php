@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/blade', function () {
+    return view('child');
+});
+
+Route::get('/foto', function () {
+    return view('foto.foto');
+});
+
+Route::get('/foto/producent', function () {
+    return view('foto.producent.producent');
+});
