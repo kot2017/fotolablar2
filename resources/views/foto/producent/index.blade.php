@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('header')
     <h2>Producent</h2>
-@endsection
-
+@stop
 
 @section('local_navbar')
     <div>
@@ -16,17 +15,20 @@
         </nav>
     </div>
 @endsection
-
 @section('content')
+    <p>Na tej witrynie znajdziesz liste producentow </p>
 
-
-    <div>
-        <p>Na tej witrynie znajdziesz liste producentow </p>
-    </div>
     <table>
-        <tr>
-            <td>bewouweyo</td>
-        </tr>
+        @foreach($producent as $p)
+            <tr>
+                <td>{{$p->ID}}</td>
+                <td>{{$p-> nazwa}}</td>
+                <td>{{$p-> link }}</td>
+                <td><a href="{{url('/foto/producent/detail/'.$p->ID)}}">szczegóły</a></td>
+                {{--                <td>{{$p-> opis }}</td>--}}
+            </tr>
+        @endforeach
     </table>
-@endsection
 
+
+@endsection

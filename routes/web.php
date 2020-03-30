@@ -13,10 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('/', function () {
+    return view('foto.foto');
+});
 
 Route::get('/blade', function () {
     return view('child');
@@ -27,5 +30,24 @@ Route::get('/foto', function () {
 });
 
 Route::get('/foto/producent', function () {
-    return view('foto.producent.producent');
+    return view('foto.producent.producent', ['tytul' => 'PRODUCENCI']);
 });
+
+Route::get('/foto/producent/index', 'ProducentWebController@allProducent');
+Route::get('/foto/producent/create', 'ProducentWebController@create');
+Route::get('/foto/producent/detail/{id}', 'ProducentWebController@detail');
+Route::get('/foto/producent/save', 'ProducentWebController@save');
+
+
+Route::get('/foto/film', function () {
+    return view('foto.filmy.filmy');
+});
+
+
+Route::get('/foto/chemikalia', function () {
+    return view('foto.chemikalia.chemikalia');
+});
+
+
+// REST
+Route::resource('filmy', 'FilmyController');

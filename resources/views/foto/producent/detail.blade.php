@@ -17,16 +17,14 @@
     </div>
 @endsection
 
+
 @section('content')
 
 
+    <h2>{{$producent->nazwa}}</h2>
+    <p><a href="{{$producent->link}}">{{$producent->link}}</a></p>
     <div>
-        <p>Na tej witrynie znajdziesz liste producentow </p>
+        {{$producent->opis}}
     </div>
-    <table>
-        <tr>
-            <td>bewouweyo</td>
-        </tr>
-    </table>
-@endsection
 
+@endsection
