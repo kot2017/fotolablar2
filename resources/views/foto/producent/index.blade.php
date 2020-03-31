@@ -25,6 +25,11 @@
                 <td>{{$p-> nazwa}}</td>
                 <td>{{$p-> link }}</td>
                 <td><a href="{{url('/foto/producent/detail/'.$p->ID)}}">szczegóły</a></td>
+                <td><a href="{{url('/foto/producent/edit/'.$p->ID)}}">edytuj</a></td>
+                <td><a href='/foto/producent/delete/{{ $p->ID }}'>Delete</a></td>
+                {{--                <form method="DELETE" action="{{ action('ProducentWebController@delete/'.$p->ID) }}">--}}
+                {{--                <td><button type="submit" >usun</button>  </td>--}}
+                {{--                 </form>--}}
                 {{--                <td>{{$p-> opis }}</td>--}}
             </tr>
         @endforeach

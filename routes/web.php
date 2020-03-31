@@ -36,8 +36,10 @@ Route::get('/foto/producent', function () {
 Route::get('/foto/producent/index', 'ProducentWebController@allProducent');
 Route::get('/foto/producent/create', 'ProducentWebController@create');
 Route::get('/foto/producent/detail/{id}', 'ProducentWebController@detail');
-Route::get('/foto/producent/save', 'ProducentWebController@save');
-
+Route::post('/foto/producent/save', 'ProducentWebController@save');
+Route::get('/foto/producent/edit/{id}', 'ProducentWebController@edit');
+Route::put('/foto/producent/update', 'ProducentWebController@update');
+Route::get('/foto/producent/delete/{id}', 'ProducentWebController@delete');
 
 Route::get('/foto/film', function () {
     return view('foto.filmy.filmy');
