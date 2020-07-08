@@ -2,6 +2,7 @@
 
 
 ## Projekt FotolabLAR2
+
 ### cel
 1. publikacja w XAMPP
 2. pubikacja w Hekko
@@ -9,6 +10,10 @@
 4. wprowadzenie danych przez formularz
 5. wyświetlenie danych w formularzu
 6. serwice REST w PHP
+
+### tło biznesowe
+Podczas wywoływania filmów analogowych wystepuje duża kompbinacja filmów i wywoływaczy pochodzących od różnych producentów oraz rózne sposoby wywoływania.
+Projekt ma na celu porównanie różnych metod tworzenia aplikacji (w tym przypadku PHP) i w rezultacie utworzenie aplikacji do zarządzania informacją wystepuącą przy wywoływaniu filmów analogowych. 
 
 ### funkcjonalność
 ##### struktura bazy danych
