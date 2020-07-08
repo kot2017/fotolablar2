@@ -46,7 +46,8 @@ wprowadzanie, wyświetlanie i edycja
     
     dostep do aplikacji Laravel
     http://127.0.0.1/FOTOLABLAR2/public/ 
-    
+
+![](rys1.jpg)    
  
 #### przykładowe wywołanie API
 http://127.0.0.1:8000/filmy/
