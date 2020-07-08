@@ -1,0 +1,96 @@
+body {
+}
+
+#promo {
+    text-align: center;
+    padding: 40px;
+    background: url(../images/filmy.jpg);
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    #promo {
+        padding: 20px;
+        background-color: rgba(214, 204, 196, 0);
+    }
+}
+
+#promo .jumbotron {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    #promo .jumbotron {
+        padding: 20px;
+    }
+}
+
+body {
+    /*margin: 0;*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size: 0.9375rem;*/
+    /*font-weight: 400;*/
+    /*line-height: 1.5;*/
+    /*color: #373a3c;*/
+    /*text-align: left;*/
+    /*background-color: #fff;*/
+}
+
+.site-section {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(194, 189, 169, 0.38);
+}
+
+#welcome {
+    max-width: 600px;
+    font-size: 24px;
+    margin: auto;
+}
+
+div#welcome.container.site-section {
+}
+
+#welcome p {
+    max-width: 600px;
+    font-size: 20px;
+}
+
+.site-section h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#div-dark {
+    background-color: #667792;
+    /*max-width: 900px;*/
+    /*align-items: center;*/
+    align-content: center;
+    /*padding: 100px;*/
+}
+
+#div-dark {
+    align-items: center;
+}
+
+#welcome-1 {
+    background-color: rgb(202, 206, 230);
+    max-width: 800px;
+}
+
+#why {
+    max-width: 800px;
+}
+
+#welcome-1 {
+    padding: 40px;
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 900px;
+}
+

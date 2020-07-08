@@ -1,3 +1,6 @@
+#Notatki
+
+[powrot](README.md)
 
 
 ![routing](images/rys_routing.png)
@@ -40,7 +43,7 @@ safely issue the command:
 
 `php artisan code:models`
 
-## controlery
+## controlery REST
 
 `php artisan make:controller ProducentController --resource`
 
@@ -51,3 +54,10 @@ php artisan make:controller ChemikaliaController --resource
 php artisan make:controller WywolaniaController --resource
 
 php artisan make:controller WynikiController --resource
+
+
+## controlery WEB
+
+`php artisan make:controller ProducentWebController`
+
+Metody wpisane ręcznie odpowiednio do widoków i funkcji

@@ -18,7 +18,7 @@
 @section('content')
     <p>Na tej witrynie znajdziesz liste producentow </p>
 
-    <table>
+    <table class="table table-striped">
         @foreach($producent as $p)
             <tr>
                 <td>{{$p->ID}}</td>

@@ -29,11 +29,11 @@ Route::get('/foto', function () {
     return view('foto.foto');
 });
 
-Route::get('/foto/producent', function () {
-    return view('foto.producent.producent', ['tytul' => 'PRODUCENCI']);
-});
+//Route::get('/foto/producent', function () {
+//    return view('foto.producent.producent', ['tytul' => 'PRODUCENCI']);
+//});
 
-Route::get('/foto/producent/index', 'ProducentWebController@allProducent');
+Route::get('/foto/producent', 'ProducentWebController@index');
 Route::get('/foto/producent/create', 'ProducentWebController@create');
 Route::get('/foto/producent/detail/{id}', 'ProducentWebController@detail');
 Route::post('/foto/producent/save', 'ProducentWebController@save');
